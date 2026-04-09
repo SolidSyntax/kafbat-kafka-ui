@@ -271,7 +271,7 @@ export const transformFormDataToPayload = (data: ClusterConfigFormValues) => {
           'security.protocol': securityProtocol,
           'sasl.mechanism': 'OAUTHBEARER',
           'sasl.client.callback.handler.class':
-            'io.kafbat.ui.sasl.azure.entra.AzureEntraLoginCallbackHandler',
+            'io.kafbat.ui.config.auth.azure.AzureEntraLoginCallbackHandler',
           'sasl.jaas.config': getJaasConfig('SASL/Azure Entra', {}),
         };
         break;

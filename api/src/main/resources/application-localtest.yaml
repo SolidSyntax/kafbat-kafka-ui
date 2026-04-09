@@ -17,5 +17,8 @@ kafka:
     enabled: true
     default-enabled: true
 
-dynamic.config.enabled: true
+dynamic:
+  config:
+    enabled: true
+    path: ${user.dir}/dynamic_config.yml
 
